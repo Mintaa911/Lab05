@@ -43,7 +43,7 @@ function addNewTask(e) {
   // Create new element for the link 
   const link = document.createElement('a');
   // Add class and the x marker for a 
-  link.className = 'delete-item secondary-content';
+  link.classList = 'delete-item secondary-content';
   link.innerHTML = '<i class="fa fa-remove"></i>';
   // Append link to li
   li.appendChild(link);
@@ -65,7 +65,6 @@ function clearAllTasks() {
 }
 // Remove Task function definition 
 function removeTask(e) {
-    console.log(e.target);
     if (e.target.parentElement.classList.contains('delete-item'))
         {
         if (confirm('Are You Sure about that ?'))
@@ -81,7 +80,19 @@ function removeTask(e) {
 // Filter tasks function definition 
 function filterTasks(e) {
 
-    console.log("Task Filter ...");
+    let input = document.getElementById("filter");
+    let mFilter = input.value.toUpperCase();
+    let li = taskList.getElementsByTagName("li");
+    for (let i = 0; i < li.length; i++) {
+        let text = li[i].textContent.toUpperCase();
+
+        if(text.indexOf(mFilter) > -1){
+            li[i].style.display = "block";
+        }else{
+            li[i].style.display = "none";
+        }
+        
+    }
 
 }
 
