@@ -1,0 +1,47 @@
+body{
+    background-color: rgb(28, 156, 156);
+    
+    
+}
+#container{
+    width: 380px;
+    height: 200px;
+    margin:5% auto;
+}
+
+#container input[type="button"]{
+    border: 1px solid gainsboro;
+    margin: 0;
+    box-sizing: border-box; 
+    min-width: 85px;
+    min-height: 85px;
+    font-size: 24px;
+}
+#textField{
+    min-width: 350px;
+    min-height: 60px;
+    font-size: 24px;
+}
+
+.btn-number{
+    color: white;
+    background-color: rgb(98, 100, 102);
+    
+}
+.btn-op{
+    color: white;
+    background-color: rgb(51, 49, 49);
+    
+}
+.btn-equal{
+    color: white;
+    background-color: rgb(243, 102, 46);
+}
+.btn-clear{
+    color: white;
+    background-color: rgb(139, 14, 5);
+}
+
+
+
+

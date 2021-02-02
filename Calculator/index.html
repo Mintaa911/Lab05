@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/mStyle.css">
+    <script src="assets/js/mJs.js"></script>
+</head>
+<body>
+    <div id="container">
+        
+        <input id="textField" type="text" value="" readonly>
+
+        <div class="">
+            <input class="btn-op " type="button" onclick="clicked(this.value)" value="(">
+            <input class="btn-op " type="button" onclick="clicked(this.value)" value=")">
+            <input class="btn-op  " type="button" onclick="clicked(this.value)" value="/">
+            <input class="btn-op " type="button" onclick="clicked(this.value)" value="x">
+        </div>
+        <div class="">
+            <input class="btn-number " type="button" onclick="clicked(this.value)" value="7">
+            <input class="btn-number " type="button" onclick="clicked(this.value)" value="8">
+            <input class="btn-number " type="button" onclick="clicked(this.value)" value="9">
+            <input class="btn-op " type="button" onclick="clicked(this.value)" value="+">
+        </div>
+        <div class="">
+            <input class="btn-number " type="button" onclick="clicked(this.value)" value="4">
+            <input class="btn-number " type="button" onclick="clicked(this.value)" value="5">
+            <input class="btn-number " type="button" onclick="clicked(this.value)" value="6">
+            <input class="btn-op " type="button" onclick="clicked(this.value)" value="-">
+        </div>
+        <div class="">
+            <input class="btn-number " type="button" onclick="clicked(this.value)" value="1">
+            <input class="btn-number " type="button" onclick="clicked(this.value)" value="2">
+            <input class="btn-number " type="button" onclick="clicked(this.value)" value="3">
+            <input class="btn-clear " type="button" onclick="clicked(this.value)" value="c">
+        </div>
+        <div class="row container ">
+            <input class="btn-number col-md-6 " type="button" onclick="clicked(this.value)" value="0">
+            <input class="btn-equal col-md-6" type="button" onclick="clicked(this.value)" value="=">
+        </div>
+        
+    
+    </div>
+</body>
+</html>
