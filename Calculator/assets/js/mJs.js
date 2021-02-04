@@ -28,8 +28,13 @@ function postfix_eval(expression){
         else{
             x = stack2.pop();
             y = stack2.pop();
-            let evalute = eval(y + post[i] + x);
-            stack2.push(evalute)
+            if(x == 0 && post[i] == "/"){
+                return "divisible by zero error";
+            }else{
+                let evalute = eval(y + post[i] + x);
+                stack2.push(evalute)
+            }
+            
         }
     }
     return stack2.pop();
